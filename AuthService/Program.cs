@@ -12,7 +12,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// ✅ MOVE THIS HERE
+// ✅ ADD HERE
+app.UseStaticFiles();
+
+// (optional but recommended)
+app.UseDefaultFiles();
+
 app.MapControllers();
 
 app.Run();
